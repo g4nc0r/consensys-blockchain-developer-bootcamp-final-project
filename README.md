@@ -23,7 +23,7 @@ PoolTogether requires a decent sized pool of depositors in order to facilitate a
 
 ### Frontend
 
-+ https://g4nc0r.github.io/blockchain-developer-bootcamp-final-project/
++ https://g4nc0r.github.io/consensys-blockchain-developer-bootcamp-final-project/
 
 ## Considerations
 
