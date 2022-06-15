@@ -1,6 +1,6 @@
 # WaffleRaffle
 
-![front end screennshot](https://github.com/g4nc0r/consensys-blockchain-developer-bootcamp-final-project/blob/d8ef0ba90037abc89ee39262f482f9afbc2f92f6/public/images/frontend-screenshot.png?raw=true)
+![front end screennshot](https://github.com/g4nc0r/consensys-blockchain-developer-bootcamp-final-project/blob/404f38592b9e20510d4c320b66b9ac22d197fa9b/public/images/frontend-screenshot.png?raw=true)
 
 ## Description
 
