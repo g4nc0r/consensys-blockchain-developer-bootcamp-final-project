@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Waffle Raffle</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="./public/css/main.css">
+   
+    </head>
+    <body class="d-flex flex-column min-vh-100">
+
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background: #c68400">
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                </ul>
+                <div style="color: white;" id="mm-current-account"></div>
+                <button id="mm-connect" class="button-75">Connect to MetaMask</button>
+            </div>
+        </nav>
+
+        <div class="jumbotron Jumbotron-header">
+            <div class="container">
+                <div class="App-header">
+                    <img class="App-logo1" src="./public/images/waffle-logo.png">
+                    <h1 style="padding:15px; font-size: 80px;">Waffle Raffle</h1>
+                    <img class="App-logo2" src="./public/images/waffle-logo.png">
+                </div>
+                <button class="button-75" style="margin:10px;" id="register-wallet">Register Wallet</button>
+            </div>
+            <div class="Instructions-box">
+                <ul>
+                    <li style="padding-top: 10px;"><h5>Instructions:</h5></li>
+                    <li>◦ A draw can be made after 500 or more ticket sales</li>
+                    <li>◦ Up to 200 tickets can be purchased in one transaction</li>
+                    <li>◦ A maximum of 200 tickets per player can be purchased</li>
+                    <li>◦ The default draw prize limit is 2 ETH</li>
+                </ul>
+            </div>
+        </div>
+
+        <!--MetaMask detected-->
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div id="mm-detected"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <!--EDIT-->
+            <div id="draw-winner"></div>
+            <div id="display-winner"></div>
+            <!--EDIT-->
+            
+            <!--First row-->
+            <div class="row" style="padding: 3%">
+                <!--Draw info-->
+                <div class="col Draw-box box">
+                    <h1>Draw <span id="draw-number"></span></h1>
+                    <div style="padding:15px;">
+                        <h3>Tickets sold: <span id="tickets-remaining"></span></h3>
+                        <h3 style="padding: 15px;">Current Prize: <span id="current-prize"></span></h3>
+                    </div>
+                </div>
+                <!--Balances & tickets info-->
+                <div class="col Balance-box box">
+                    <h1>Your Account</h1>
+                    <div style="padding:15px;">    
+                        <h3>
+                            <img src="./public/images/eth-logo.png" class="Icons"> 
+                            Your balance: 
+                            <span id="user-balance"></span></h3>
+                        <h3 style="padding:15px;"><img src="./public/images/ticket.png" class="Icons"> Your tickets: <span id="user-tickets"></span></h3>                      
+                    </div>
+                </div>
+            </div>
+            
+            <!--Second row-->
+            <div class="row">
+                <!--Buy tickets-->
+                <div class="col Tickets-box box">
+                    <h1>Tickets</h1>
+                    <img src="./public/images/waffle-icon1.png" class="Waffle-icons">
+                    <input style="width:50%" id="ticket-purchase-amount" type="number" placeholder="Buy Tickets"/>
+                    <button style="width:50%" class="button-74" id="ticket-purchase-button">Buy</button>
+                </div>
+                <!--Deposit Eth-->
+                <div class="col Deposit-box box">
+                    <h1>Deposit</h1>
+                    <img src="./public/images/waffle-icon1.png" class="Waffle-icons">      
+                    <input style="width:50%" id="ss-input-box" type="number" placeholder="Deposit"/>
+                    <button style="width:50%" class="button-74" id="ss-input-button">Deposit</button> 
+                </div>
+                <!--Withdraw Eth-->
+                <div class="col Withdraw-box box">
+                    <h1>Withdraw</h1>
+                    <img src="./public/images/waffle-icon1.png" class="Waffle-icons">
+                    <input style="width:50%" id="withdraw-amount" type="number" placeholder="Withdraw"/>
+                    <button style="width:50%" class="button-74" id="withdraw-button">Withdraw</button> 
+                </div>
+            </div>
+            <div class="row" style="padding: 5%"></div>
+            <div class="row">
+                <div class="col-sm-12">
+  
+
+                </div>
+            </div>
+        </div>
+        <!--Footer-->
+        <footer class="mt-auto" style="background: black; height: 150px;">
+            
+        </footer>
+    </body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>   
+    <script src="./public/js/waffleraffle.js"></script>
+</html>

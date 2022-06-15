@@ -1,0 +1,218 @@
+
+body {
+  text-align: center;
+  background-color: white;
+  min-height: 100vh;
+  background-image: url('../images/wafflebackground.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  
+  background-size: 500px auto;
+
+}
+
+/*~~~App logos and header~~~~~~~~~~~~~~~~~~~~*/
+
+.App-logo1 {
+  float: left;
+  height: 10vmin;
+  pointer-events: none;
+  padding: 20px;
+}
+
+.App-logo2 {
+  float: right;
+  height: 10vmin;
+  pointer-events: none;
+  padding: 20px;
+}
+
+.App-header {
+  padding-top: 30px;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.App-header-child {
+  display: flex;
+}
+
+.Icons {
+  height: 40px;
+  width: auto;
+}
+
+.Waffle-icons {
+  height: 60px;
+  width: auto;
+}
+
+.Jumbotron-header {
+  background: #ffb300;
+}
+
+.Instructions-box {
+  margin-top: 30px; 
+  padding: 30px; 
+  background: #1C448E; 
+  width: 550px;
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+  border-radius: 30px; 
+  color: white;
+  box-shadow: #422800 4px 4px 0 0;
+}
+
+ul { 
+  list-style-type: none;
+  text-align: left;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~Information boxes~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.Draw-box {
+  background: #DBFE87;
+  color: black;
+  border-radius: 30px;
+  height: 250px;
+  padding: 20px;
+  box-shadow: #422800 4px 4px 0 0;
+}
+
+.Balance-box {
+  background: #FFE381;
+  color: black;
+  border-radius: 30px;
+  height: 250px;
+  padding: 20px;
+  box-shadow: #422800 4px 4px 0 0;
+}
+
+/*~~~Interactive boxes~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.Deposit-box {
+  background: #fbeee0;
+  padding: 20px; 
+  color: black;
+  border-radius: 30px;
+  height: 250px;
+  box-shadow: #422800 4px 4px 0 0;
+}
+
+.Withdraw-box {
+  background: #fbeee0;
+  padding: 20px; 
+  color: black;
+  border-radius: 30px;
+  height: 250px;
+  box-shadow: #422800 4px 4px 0 0;
+}
+
+.Tickets-box {
+  background: #fbeee0;
+  padding: 20px; 
+  color: black;
+  border-radius: 30px;
+  height: 250px;
+  box-shadow: #422800 4px 4px 0 0;
+}
+
+.Winner-box {
+  background: #fbeee0;
+  padding: 20px; 
+  color: black;
+  border-radius: 30px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: #422800 6px 6px 0 0;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+
+/*~~~Boxes button class~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.button-74 {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 24px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-74:hover {
+  background-color: #fff;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 150px;
+    padding: 0 25px;
+  }
+}
+
+/*~~~Jumbotron button class~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.button-75 {
+  background-color: #ffb300;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 24px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-75:hover {
+  background-color: #fff;
+}
+
+.button-75:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-75 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+.box{
+  box-sizing: border-box;
+  border: 3px solid;
+  background-clip:padding-box;
+  margin: 3px;
+}
+

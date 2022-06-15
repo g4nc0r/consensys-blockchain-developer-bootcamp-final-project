@@ -1,0 +1,6 @@
+node_modules/
+.env
+.infura_api_key
+.mnemonicFile
+/build
+final-project-checklist.txt
